@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "ferbtastic";
+	src: url("font/ferbtastic.ttf");
+}
+:root {
+	--primary-color: #0b9f21;
+	--secondary-color: #4a227b;
+	--background-color: #fdfcc8;
+}
+body {
+	margin: 0;
+	font-family: "ferbtastic";
+	font-weight: 300;
+	background-color: var(--background-color);
+}
+
+.header {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	padding: 1rem;
+	text-align: center;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+.header h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.middle-section {
+	max-width: 900px;
+	width: 100%;
+	margin: 4rem auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+#txt-input {
+	width: 60%;
+}
+#txt-output {
+	width: 60%;
+}
+.img-style {
+	height: 20vh;
+}
+.ferb {
+	margin: 0 2rem;
+}
+
+.btn-style {
+	margin: 2rem auto;
+	color: #fff;
+	font-family: "ferbtastic";
+	font-size: 1.3rem;
+	padding: 1rem 2rem;
+	border-radius: 3rem;
+	display: block;
+	border: none;
+	background: linear-gradient(120deg, hsla(129, 87%, 33%, 0.8), hsla(267, 57%, 31%, 0.8));
+}
+
+footer {
+	background-color: var(--secondary-color);
+	color: var(--background-color);
+	padding: 1rem;
+	text-align: center;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
+	margin: 12.5vh auto 0;
+	width: 100%;
+}
+.about-text {
+	max-width: 600px;
+	margin: auto;
+	font-size: 1.5rem;
+	text-align: center;
+}
