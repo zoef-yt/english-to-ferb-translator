@@ -1,78 +1,133 @@
-@font-face {
-	font-family: "ferbtastic";
-	src: url("font/ferbtastic.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
 :root {
-	--primary-color: #0b9f21;
-	--secondary-color: #4a227b;
-	--background-color: #fdfcc8;
+	--color-primary: #ec4899;
+	--off-white: #fce8f2;
 }
 body {
+	padding-bottom: 8rem;
 	margin: 0;
-	font-family: "ferbtastic";
-	font-weight: 300;
-	background-color: var(--background-color);
-}
-
-.header {
-	background-color: var(--primary-color);
-	color: var(--background-color);
-	padding: 1rem;
-	text-align: center;
-	border-bottom-right-radius: 1rem;
-	border-bottom-left-radius: 1rem;
-}
-.header h1 {
-	font-size: 3rem;
-	margin: 0;
-}
-
-.middle-section {
-	max-width: 900px;
-	width: 100%;
-	margin: 4rem auto;
-	padding: 1rem;
-	text-align: center;
+	background-color: #f2f2f2;
+	font-family: "Montserrat", sans-serif;
 }
 
 #txt-input {
-	width: 60%;
+	display: inline;
+	width: 65%;
+	min-height: 15vh;
+	max-height: 20vh;
+	padding: 1rem;
+	border: 0.1rem var(--color-primary) solid;
 }
 #txt-output {
-	width: 60%;
+	box-sizing: border-box;
+	width: 70%;
+	text-align: left;
+	padding: 1rem;
+	background-color: white;
+	font-weight: 400;
+	min-height: 15vh;
+	max-height: 20vh;
+	border: 0.1rem var(--color-primary) solid;
 }
 .img-style {
-	height: 20vh;
+	height: 16vh;
 }
 .ferb {
 	margin: 0 2rem;
 }
 
-.btn-style {
-	margin: 2rem auto;
-	color: #fff;
-	font-family: "ferbtastic";
-	font-size: 1.3rem;
-	padding: 1rem 2rem;
-	border-radius: 3rem;
+#btn-translate {
+	background-color: var(--color-primary);
+	color: var(--off-white);
+	margin: 1rem auto;
 	display: block;
-	border: none;
-	background: linear-gradient(120deg, hsla(129, 87%, 33%, 0.8), hsla(267, 57%, 31%, 0.8));
+	padding: 1rem 2rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0.1rem white solid;
 }
 
-footer {
-	background-color: var(--secondary-color);
-	color: var(--background-color);
+.container {
+	text-align: center;
+	max-width: 80%;
+	margin: 5rem auto;
+	padding: 4rem;
+	margin-bottom: 0;
+	border-radius: 0.5rem;
+	background-color: var(--off-white);
+}
+
+/* !All imported component here */
+.navigation {
+	background-color: var(--color-primary);
+	color: white;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	padding: 0.5rem 1rem;
+}
+.nav-brand {
+	font-weight: bold;
+	font-size: 2rem;
+}
+.nav-pills {
+	text-align: right;
+}
+.navigation .link {
+	color: white;
+}
+
+.link-active {
+	font-weight: bold;
+}
+
+.list-non-bullet {
+	list-style-type: none;
+	margin-block-start: 0;
+	padding-inline-start: 0;
+}
+.list-on-one-line {
+	white-space: nowrap;
+	/* overflow-x: hidden; */
+}
+.link {
+	text-decoration: none;
+}
+.list-item-inline {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.footer {
+	display: block;
+	background-color: var(--color-primary);
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 99%;
+	margin: 0 auto;
 	padding: 1rem;
+	height: 5rem;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
 	text-align: center;
-	border-top-right-radius: 1rem;
-	border-top-left-radius: 1rem;
-	margin: 12.5vh auto 0;
-	width: 100%;
+	border-top: solid 0.1rem white;
 }
-.about-text {
-	max-width: 600px;
-	margin: auto;
+.footer .link {
+	color: white;
+	margin-top: 1rem;
+}
+.footer ul {
+	padding-inline-start: 0;
+}
+.footer li {
+	margin-top: 1rem;
+}
+.footer-heading {
+	color: white;
 	font-size: 1.5rem;
-	text-align: center;
+	font-weight: bold;
 }
+
+/* !All imported component End here */
